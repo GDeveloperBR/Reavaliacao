@@ -5,8 +5,8 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-		ArrayList<Projeto> projetos;
-		ArrayList<Login> logins;
+		ArrayList<Projeto> projetos = new ArrayList<Projeto>();
+		ArrayList<Login> logins = new ArrayList<Login>();
 		Scanner s;
 		boolean sair;
 		int entrada;
@@ -22,7 +22,7 @@ public class Main {
 				System.out.println("[1] FAZER LOGIN");
 				System.out.println("[2] FAZER CADASTRO");
 				System.out.println("[3] SAIR");
-				System.out.print("-->");
+				System.out.print(" ");
 				entrada = s.nextInt();
 			} while(entrada < 1 || entrada > 3);
 			
@@ -45,7 +45,7 @@ public class Main {
 							do {
 								System.out.println("[1] ADICIONAR PROJETO");
 								System.out.println("[2] RELATORIO DE PROJETOS");
-								System.out.print("-->");
+								System.out.print("--> ");
 								entrada = s.nextInt();
 							} while(entrada < 1 || entrada > 2);
 							
@@ -55,7 +55,7 @@ public class Main {
 								case 1:
 										ArrayList<Profissional> profissionais = new ArrayList<Profissional>();
 										ArrayList<Atividade> atividades = new ArrayList<Atividade>();
-										System.out.print("Digite a identidicacao: ");
+										System.out.print("Digite a identificacao: ");
 										String identificacao = s.next();
 										System.out.print("Digite o status: ");
 										String status = s.next();
