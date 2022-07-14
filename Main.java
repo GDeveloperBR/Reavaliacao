@@ -5,8 +5,8 @@ import java.util.*;
 public class Main {
 
 	public static void main(String[] args) {
-		ArrayList<Projeto> projetos = new ArrayList<Projeto>();
-		ArrayList<Login> logins = new ArrayList<Login>();
+		ArrayList<Projeto> projetos;
+		ArrayList<Login> logins;
 		Scanner s;
 		boolean sair;
 		int entrada;
@@ -22,7 +22,7 @@ public class Main {
 				System.out.println("[1] FAZER LOGIN");
 				System.out.println("[2] FAZER CADASTRO");
 				System.out.println("[3] SAIR");
-				System.out.print(" ");
+				System.out.print("---> ");
 				entrada = s.nextInt();
 			} while(entrada < 1 || entrada > 3);
 			
